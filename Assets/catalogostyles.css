@@ -1,0 +1,136 @@
+* {padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;}
+
+header {background-color: #f4f4f4;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 45;
+        }
+    
+.navbar_list--menu {
+        display: inline-block;
+        padding: 0px 20px;
+        list-style-type: none;
+        transition: all 0.3s ease 0s;
+        color: #c0b283;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 2%;}
+    ul li:hover {
+        background-color: #c0b283;
+        color: white;}
+    
+/*IMAGEN INTRO */
+    
+.mainbanner {width: 100%;
+        height: 400px;
+        background-color: rgb(48, 47, 47);
+        background-blend-mode: soft-light;
+        background-image: url(https://assets.teenvogue.com/photos/5e6bffbbdee1770008c6d9bd/16:9/w_2560%2Cc_limit/GettyImages-577674005.jpg);
+        background-size: cover;}
+.mainbanner img {width: 100%;
+    height: 400px;}
+
+/* NOVEDADES */
+
+.container_novedades {width: 100%;
+    height: 600px;
+    background-image: linear-gradient(90deg, rgba(192,178,131,1) 0%, rgba(210,195,143,1) 35%, rgba(192,178,131,1) 100%);}
+.container_novedades--titulo {text-align: center;
+    padding-top: 2%;
+    color: #373737;
+    font-weight: bolder;}
+.container_novedades--catalogo {display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
+.card {width: 300px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);  
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f4f4f4;}
+.container_novedades--catalogo .card:hover {transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);}
+
+/* LO MAS VENDIDO */
+.container_vendidos {width: 100%;
+    height: 600px;
+    background-image: linear-gradient(90deg, rgba(220,208,192,1) 0%, rgba(237,225,208,1) 35%, rgba(220,208,192,1) 100%);}
+.container_vendidos--titulo {text-align: center;
+    padding-top: 2%;
+    color: #373737;
+    font-weight: bolder;}
+.container_vendidos--catalogo {display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
+.container_vendidos--catalogo .card:hover {transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);}
+
+/* CATALOGO */
+.container_catalogo {width: 100%;
+    height: 600px;
+    background-color: #f4f4f4;}
+.container_catalogo--titulo {text-align: center;
+    padding-top: 2%;
+    color: #373737;
+    font-weight: bolder;}
+.container_catalogo--catalogo {display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: bolder;}
+.container_catalogo--catalogo img {box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)}
+button {background-color: #4CAF50; 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;}
+button a {text-decoration: none;}
+button p {color: white;}
+button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)}
+
+h6 {text-align: end;
+    margin-top: 2%;}
+
+/* FOOTER */
+footer {height: 200px;
+    width: 100%;
+    background-color: #dcd0c0;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #373737;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;}
+
+.redes {display: flex;}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+   
+    .container_catalogo--catalogo {flex-wrap: wrap;}
+    .container_catalogo--catalogo button {max-width: 100px;}
+    footer {margin-top: 140%;}
+    .navbar_list {display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 10%;}
+        } 

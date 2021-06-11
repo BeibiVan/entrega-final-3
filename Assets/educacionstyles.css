@@ -1,0 +1,96 @@
+* {padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+/*HEADER  */
+header {background-color: #f4f4f4;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 900;
+        }
+    
+.navbar_list--menu {
+        display: inline-block;
+        padding: 0px 20px;
+        list-style-type: none;
+        transition: all 0.3s ease 0s;
+        color: #c0b283;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 2%;}
+    ul li:hover {
+        background-color: #c0b283;
+        color: white;}
+
+/* MAIN BANNER */
+.banner {width: 100%;
+    height: 400px;
+    background-image: url(https://i1.wp.com/oecdedutoday.com/wp-content/uploads/2021/01/Child-safety-in-the-digital-age.jpg?fit=1200%2C675&ssl=1);
+    background-size: cover;
+    color: white;
+    background-color: rgb(48, 47, 47);
+    background-blend-mode: soft-light;}
+
+.banner_texto {padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 20%;
+    font-weight: bold;}
+
+/* CATALOGO */
+.container_catalogo {width: 100%;
+    height: 600px;
+    background-color: #f4f4f4;}
+
+.container_catalogo--titulo {text-align: center;
+    padding-top: 2%;
+    color: #373737;
+    font-weight: bolder;}
+
+.container_catalogo--libros {display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;}
+.card {width: 300px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);  
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #f4f4f4;}
+
+.container_catalogo--libros .card:hover {transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);}
+/* FOOTER */
+footer {height: 200px;
+    width: 100%;
+    background-color: #dcd0c0;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #373737;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;}
+
+.redes {display: flex;}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+   
+    .banner_texto {padding-top: 30%;}
+    .container_catalogo--libros {flex-wrap: wrap;}
+    .card {max-width: 100px;}
+    footer {margin-top: 90%;}
+    .navbar_list {display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 10%;}
+        } 
